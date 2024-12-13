@@ -19,8 +19,6 @@ a {
 header {
     position: sticky;
     top: 0;
-    background-color: #0d1017;
-    border-bottom: 1px solid #5d817b99;;
     margin-bottom: 2rem;
 }
 
@@ -34,7 +32,7 @@ header {
 .nav-list {
     display: inline-flex;
     align-items: center;
-    background-color: #5d817b99;
+    background-color: #5d817bdd;
     gap: 1.2rem;
     list-style: none;
     margin: 1rem auto;
@@ -58,7 +56,8 @@ header {
         width: 100%;
         border-radius: 0px;
         justify-content: space-around;
-        margin: 0 0 2rem 0;
         padding: 1.2rem 1rem 1rem 1rem;
+        margin: 0%;
     }
+
 }
