@@ -12,11 +12,6 @@ body {
     color: #eaefef;
 }
 
-.body-wrapper {
-    max-width: 1500px;
-    margin: auto;
-}
-
 a {
     text-decoration: none;
 }
@@ -29,6 +24,8 @@ header {
 .nav {
     display: flex;
     width: 100%;
+    container-type: inline-size;
+    container-name: nav;
 }
 
 .nav-list {
@@ -43,11 +40,44 @@ header {
 }
 
 .nav-list-element a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #e8e5e5;
     cursor: pointer;
 }
 
 .nav-list-element a:hover {
     color: #fff;
+}
+
+.nav-list-element-mobile {
+    display: none;
+}
+
+.nav-list-element-mobile a {
+    font-size: 1.5rem;
+    color: #e8e5e5;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cv-mobile {
+    margin-bottom: .6rem;
+}
+
+@container nav (max-width: 550px) {
+    .nav-list {
+        width: 100%;
+        border-radius: 0px;
+        justify-content: space-around;
+        margin: 0%;
+        padding: 1.2rem 1rem 1.5rem 1rem;
+    }
+
+    .nav-list-element-mobile {
+        display: flex;
+    }
+
+    .nav-list-element {
+        display: none;
+    }
 }
