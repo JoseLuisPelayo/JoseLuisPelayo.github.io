@@ -19,6 +19,9 @@ a {
 header {
     position: sticky;
     top: 0;
+    background-color: #0d1017;
+    border-bottom: 1px solid #5d817b99;;
+    margin-bottom: 2rem;
 }
 
 .nav {
@@ -31,10 +34,10 @@ header {
 .nav-list {
     display: inline-flex;
     align-items: center;
-    background-color: #5d817bcc;
+    background-color: #5d817b99;
     gap: 1.2rem;
     list-style: none;
-    margin: 1rem auto 2rem auto;
+    margin: 1rem auto;
     padding: .5rem 1rem .7rem 1rem;
     border-radius: 1.2rem;
 }
@@ -48,20 +51,6 @@ header {
 
 .nav-list-element a:hover {
     color: #fff;
-}
-
-.nav-list-element-mobile {
-    display: none;
-}
-
-.nav-list-element-mobile a {
-    font-size: 1.5rem;
-    color: #e8e5e5;
-    font-weight: 600;
-}
-
-.cv-mobile {
-    margin-bottom: .6rem;
 }
 
 @container nav (max-width: 550px) {
