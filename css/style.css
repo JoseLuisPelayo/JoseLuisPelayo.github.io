@@ -70,12 +70,12 @@ a {
     margin: auto;
     gap: 2.5rem;
     position: absolute;
-    left: 1.5rem;
+    left: 1rem;
 
 }
 
 .nav-list-element a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #e8e5e5;
     cursor: pointer;
     text-align: center;
