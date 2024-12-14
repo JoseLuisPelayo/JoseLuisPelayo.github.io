@@ -26,6 +26,10 @@ a {
     text-align: center;
 }
 
+.header-page h1 {
+    margin: auto;
+}
+
 
 .main-wrapper {
     display: flex;
@@ -40,7 +44,7 @@ a {
     display: flex;
     flex-basis: 10rem;
     flex-grow: 1;
-    align-items: start; 
+    align-items: start;
     border-right: 1px solid #5d817b99;
 }
 
@@ -49,7 +53,11 @@ a {
     width: 100%;
     position: relative;
     container-type: inline-size;
-    container-name: nav; 
+    container-name: nav;
+}
+
+.nav-list-mobile {
+    display: none;
 }
 
 .nav-list {
@@ -61,7 +69,7 @@ a {
     margin: auto;
     gap: 2rem;
     position: fixed;
-    left: 2rem;
+    left: 1.5rem;
 
 }
 
@@ -78,20 +86,23 @@ a {
 
 @media (max-width: 425px) {
     .nav-list {
-        width: 100%;
-        justify-content: space-around;
-        flex-direction: row;
-        position: fixed;
-        right: 0;
-        top: 3.5rem;
-        background: linear-gradient(90deg, rgba(13, 16, 23, 1) 0%, rgba(18, 23, 33, 1) 35%, rgba(13, 16, 23, 1) 100%);
-        z-index: 1;
+        display: none;
     }
-    
+
+    .nav-list-mobile {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        padding: .5rem 1rem .7rem 1rem;
+        margin: auto;
+    }
+
     .nav-list-element a {
         font-size: 1rem;
     }
-    
+
     .nav-container {
         border: none;
     }
@@ -119,6 +130,7 @@ a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     margin: auto;
 }
@@ -130,7 +142,6 @@ a {
     border-radius: 100%;
     overflow: hidden;
     max-width: 12rem;
-    margin: auto;
 }
 
 .about-img img {
@@ -142,8 +153,13 @@ a {
     flex-direction: column;
     flex-basis: 0;
     flex-grow: 999;
-    max-width: 35rem;
     font-size: 1.5rem;
+    max-width: 50rem;
+}
+
+.about-text-p,
+.about-text-title {
+    max-width: 50rem;
 }
 
 /* BANNER STACK ----------------------------------------- */
@@ -159,7 +175,7 @@ a {
 .banner-stack-title {
     font-size: 1.2rem;
     color: #e8e5e5;
-    
+
 }
 
 .banner-stack-container {
