@@ -7,8 +7,8 @@
 
 body {
     min-height: 100svh;
-    min-width: 100svw;
-    background-color: #0d1017;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(13, 16, 23, 1) 0%, rgba(18, 23, 33, 1) 35%, rgba(13, 16, 23, 1) 100%);
     color: #eaefef;
 }
 
@@ -16,28 +16,47 @@ a {
     text-decoration: none;
 }
 
-header {
+.header-page {
     position: sticky;
     top: 0;
-    margin-bottom: 2rem;
+    background: linear-gradient(90deg, rgba(13, 16, 23, 1) 0%, rgba(18, 23, 33, 1) 35%, rgba(13, 16, 23, 1) 100%);
+    border-bottom: 1px solid #5d817b99;
+    z-index: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: min(90%, 1400px);
+    margin: auto;
+}
+
+.nav-container {
+    padding-top: 2rem;
+    display: flex;
+    flex-basis: 10rem;
+    flex-grow: 1;
+    align-items: start; 
+    border-right: 1px solid #5d817b99;
 }
 
 .nav {
     display: flex;
     width: 100%;
     container-type: inline-size;
-    container-name: nav;
+    container-name: nav; 
 }
 
 .nav-list {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    background-color: #5d817bdd;
-    gap: 1.2rem;
     list-style: none;
-    margin: 1rem auto;
     padding: .5rem 1rem .7rem 1rem;
-    border-radius: 1.2rem;
+    flex-direction: column;
 }
 
 .nav-list-element a {
@@ -51,13 +70,104 @@ header {
     color: #fff;
 }
 
-@container nav (max-width: 550px) {
+@media (max-width: 400px) {
     .nav-list {
         width: 100%;
-        border-radius: 0px;
         justify-content: space-around;
-        padding: 1.2rem 1rem 1rem 1rem;
-        margin: 0%;
+        flex-direction: row;
+    }
+    
+    .nav-list-element a {
+        font-size: 1rem;
     }
 
+
+}
+
+.main-container {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 60%;
+    padding-top: 2rem;
+    flex-direction: column;
+}
+
+
+
+/* ABOUT -------------------------------*/
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 2rem;
+    margin: auto;
+}
+
+.about-img {
+    display: flex;
+    flex-basis: 18rem;
+    flex-grow: 1;
+    border-radius: 100%;
+    overflow: hidden;
+    max-width: 10rem;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    text-wrap: normal;
+    flex-basis: 0;
+    flex-grow: 999;
+    max-width: 22rem;
+}
+
+/* BANNER STACK ----------------------------------------- */
+
+
+/* ELEMENTS -------------------------------------------*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.chip {
+    display: flex;
+    align-items: center;
+    width: min(6rem, 30%);
+    gap: .3rem;
+    padding: .2rem;
+    border: 1px solid #4a666199;
+    border-radius: 100px;
+    /* justify-content: center;
+     */
+     /* text-align: center; */
+     overflow: hidden;
+}
+
+.chip-img {
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #4a666199;
+    padding: .1rem;
+}
+
+.chip-img img {
+    width: 100%;
+    margin: auto;
+}
+
+.wrapper {
+    width: min(90%, 1400px);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
