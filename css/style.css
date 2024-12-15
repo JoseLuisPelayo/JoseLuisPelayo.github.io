@@ -87,7 +87,8 @@ a {
 }
 
 @media (max-width: 425px) {
-    .nav-list {
+    .nav-list,
+    .nav-container {
         display: none;
     }
 
@@ -95,22 +96,22 @@ a {
         display: flex;
         width: 100%;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         list-style: none;
-        padding: .5rem 1rem .7rem 1rem;
+        padding: 0 1rem;
         margin: auto;
     }
 
     .nav-list-element a {
-        font-size: 1rem;
+        position: relative;
     }
 
     .nav-container {
         border: none;
     }
 
-    .header-page {
-        font-size: .5rem;
+    .header-page a {
+        font-size: 1rem;
     }
 }
 
