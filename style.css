@@ -10,11 +10,13 @@
 
 body {
     background-image: url(./img/fondo.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: fixed;
+    background-repeat: no-repeat;
     /* Añadir foto de fondo */
 }
 
-section {
+#index-wrapper {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -26,11 +28,11 @@ section {
 
 /* HEADER */
 
-header {
+#header1 {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    width: min(1500px, 100%);
+    margin: auto;
     padding: 3rem 6rem;
     display: flex;
     justify-content: space-between;
@@ -97,8 +99,11 @@ header .navbar li a:hover {
 
 .contenido .titulo-box h2 {
     font-size: 4.5rem;
-    text-transform: uppercase;
     color: #fff;
+}
+
+#title-data-box {
+    text-transform: uppercase;
 }
 
 .contenido .titulo-box h2 span {
@@ -145,7 +150,7 @@ header .navbar li a:hover {
 }
 
 .contenido .img-box img {
-    height: min(80vh, 100%);
+    height: min(60vh, 100%);
 }
 
 .contenido .img-box img:hover {
@@ -193,4 +198,209 @@ header .navbar li a:hover {
 }
 .redes-sociales li:hover a {
     color: #69afe0;
+}
+
+/* CV */
+
+.header {
+    width: min(1500px, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    background-color: #05050577;
+}
+
+.separation-line {
+    display: block;
+    width: 100%;
+    border-bottom: 5px dotted #a0a0a0;
+    margin: 1rem 0;
+}
+
+.content {
+    width: min(1500px, 100%);
+    background-color: slategrey;
+    color: #fcfcfc;
+    padding: 2rem;
+    margin: auto;
+    font-family: "Roboto Mono", monospace;
+}
+
+#title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#title-data-box > h1 {
+    font-size: 3rem;
+}
+
+#title-img-box {
+    width: 300px;
+}
+
+#title-img-box img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#about {
+    margin: auto;
+}
+
+#about h2,
+#contact-info h2  {
+    margin-bottom: .5rem;
+}
+
+#about p {
+    margin: 0 1rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin-bottom: .3rem;
+}
+
+#contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+#contact-info ul {
+    list-style: none;
+    padding-left: .5rem;
+}
+
+#contact-info ul li {
+    display: flex;
+    align-items: center;
+    padding-left: .5rem;
+    margin-bottom: .3rem;
+    font-size: 1.2rem;
+}
+
+#contact-info ul li span {
+    padding-top: 4px;
+    padding-right: .3rem;
+}
+
+#contact-info ul a {
+    text-decoration: none;
+    color: #fcfcfc;
+}
+
+#contact > ul > li:hover a {
+    color: #69afe0;
+    text-decoration: underline;
+}
+
+#contact ul li:hover {
+    color: #69afe0;
+}
+
+#education li {
+    flex-direction: column;
+}
+
+#education li P {
+    width: 100%;
+}
+
+#education .educacion-principal {
+    font-weight: 600;
+    margin-bottom: .2rem;
+}
+
+#education .educacion-data {
+    padding-left: 1rem;
+}
+
+.experience article {
+    margin-bottom: .3rem;
+}
+
+.experience p {
+    padding-left: 1rem;
+    margin-bottom: .2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.experience ul {
+    padding-left: 3rem;
+}
+
+.experience ul li {
+    font-size: 1.1rem;
+    margin-bottom: .2rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: .5rem;
+}
+
+.skills ul span,
+.cert-title {
+    font-weight: 600;
+}
+
+.skills ul li {
+    margin-bottom: .3rem;
+}
+
+.cert-date {
+    padding-left: 1rem;
+}
+
+footer {
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    width: min(1500px, 100%);
+    background-color: #05050577;
+    padding: 2rem;
+    margin: auto;
+}
+
+footer ul {
+    display: inline-flex;
+    list-style: none;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+footer ul a {
+    color: #fff;
+    display: flex;
+
+}
+
+footer li:hover a {
+    color: #69afe0;
+}
+
+/* PROYECTOS */
+
+.proy-content {
+    color: #fcfcfc;
+    text-align: center;
+}
+
+.proy-content h1 {
+    padding: 1rem 2rem;
+    background-color: #fcfcfc77;
 }
