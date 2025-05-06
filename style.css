@@ -269,6 +269,10 @@ footer li:hover a {
     margin-bottom: 2rem;
 }
 
+.back section {
+    margin-bottom: 1rem;
+}
+
 #about {
     margin: auto;
 }
