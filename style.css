@@ -270,6 +270,10 @@ footer li:hover a {
 }
 
 .back section {
+    margin-bottom: 2rem;
+}
+
+.experience article {
     margin-bottom: 1rem;
 }
 
